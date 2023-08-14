@@ -17,7 +17,7 @@ const ContextWrapper = ({ children }: { children: ReactNode }) => {
         </contextVal.Provider>
     )
 };
-export function contextValExtractor() {
+export function ContextValExtractor() {
     let res = useContext(contextVal);
     return res
 }

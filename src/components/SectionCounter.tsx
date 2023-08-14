@@ -1,12 +1,12 @@
 "use client"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { contextValExtractor } from '@/global_state/context';
+import { ContextValExtractor } from '@/global_state/context';
 import React, { useState } from 'react';
 import { typeOfRecent } from './types/type';
 
 const SectionCounter = () => {
-    let { valstate, dispatchVal, recentActivity, setrecentActivity }: any = contextValExtractor();
+    let { valstate, dispatchVal, recentActivity, setrecentActivity }: any = ContextValExtractor();
     const notify = (errMessage: string) => toast(errMessage);
     console.log(recentActivity)
 
