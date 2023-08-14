@@ -7,9 +7,10 @@ const contextVal = createContext<typeOfContext | null>(null);
 
 const ContextWrapper = ({ children }: { children: ReactNode }) => {
     const mathNumber: number = 0;
+    
     const recentActivityInitial: any = ([]);
     const [recentActivity, setrecentActivity]: any = useReducer(recentActivityReducer, recentActivityInitial)
-    const [valstate, dispatchVal] = useReducer<any>(configureValue, mathNumber)
+    const [valstate, dispatchVal] = useReducer<any>(configureValue, mathNumber,)
 
     return (
         <contextVal.Provider value={{ valstate, dispatchVal, recentActivity, setrecentActivity }}>

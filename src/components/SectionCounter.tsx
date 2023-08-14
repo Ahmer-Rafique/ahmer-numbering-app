@@ -90,7 +90,7 @@ const SectionCounter = () => {
             <div className=" bg-blue-500 text-white p-10 rounded-lg shadow-lg space-y-4">
                 <div className='flex w-full'>
                     <div className='px-2 w-full'>
-                        <h1 className="text-4xl font-semibold mb-4">{valstate}</h1>
+                        <h1 className="text-4xl font-semibold mb-4"> {valstate} Section</h1>
                         <div className="flex space-x-4 w-full">
                             <button
                                 className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg focus:outline-none"
